@@ -7,25 +7,16 @@
     overflow: hidden;
 }
 .images{
-	position: relative;
-	
-	}
+	display: flex;
+	transition: all 0.5s;
+}
 .images > img{
 	width: 100%; 
-	transition: all 0.3s;
-	position: absolute;	
-	top: 0;
 }
-
-.images > img.current{
-	left: 0;
-	transform: translateX(0);
-    z-index: 1;
+.buttons{
+	text-align: center;
 }
-.images > img.leave{
-	transform: translateX(-100%);
-    z-index: 1;
-}
-.images > img.enter{ 
-	transform: translateX(100%);
+.buttons > button{
+	padding: 5px 15px;
+	margin: 0 8px;
 }
